@@ -1,17 +1,17 @@
 require 'rubygems'
 require 'rake'
 require 'rake/testtask'
-require './lib/ruby-units'
+require './lib/rails-units'
 
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "ruby-units"
+    gem.name = "rails-units"
     gem.summary = %Q{A class that performs unit conversions and unit math}
     gem.description = %Q{Provides classes and methods to perform unit math and conversions}
     gem.authors = ["Kevin Olbrich, Ph.D."]
-    gem.email = ["kevin.olbrich+ruby_units@gmail.com"]
-    gem.homepage = "https://github.com/olbrich/ruby-units"
+    gem.email = ["spike@scpike.net"]
+    gem.homepage = "https://github.com/scpiek/rails-units"
     gem.files.exclude(".*")
   end
   Jeweler::GemcutterTasks.new
@@ -34,7 +34,7 @@ begin
 
   desc "Run specs"
   RSpec::Core::RakeTask.new
-  
+
   desc  "Run all specs with rcov"
   RSpec::Core::RakeTask.new("spec:rcov") do |t|
     t.rcov = true

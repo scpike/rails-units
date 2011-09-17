@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rails-units}
-  s.version = "1.3.1"
+  s.version = "1.4.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Kevin Olbrich, Ph.D.", "Stephen Pike"]
-  s.date = %q{2011-06-23}
-  s.description = %q{Provides classes and methods to perform unit math and conversions. Based on ruby-units but rails-compatible}
-  s.email = ["spike@scpike.net"]
+  s.authors = [%q{Kevin Olbrich, Ph.D.}]
+  s.date = %q{2011-09-17}
+  s.description = %q{Provides classes and methods to perform unit math and conversions}
+  s.email = [%q{spike@scpike.net}]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md",
@@ -26,37 +26,37 @@ Gem::Specification.new do |s|
     "RakeFile",
     "TODO",
     "VERSION",
-    "lib/ruby-units.rb",
-    "lib/ruby_units.rb",
-    "lib/ruby_units/array.rb",
-    "lib/ruby_units/cache.rb",
-    "lib/ruby_units/date.rb",
-    "lib/ruby_units/fixnum.rb",
-    "lib/ruby_units/math.rb",
-    "lib/ruby_units/numeric.rb",
-    "lib/ruby_units/object.rb",
-    "lib/ruby_units/string.rb",
-    "lib/ruby_units/time.rb",
-    "lib/ruby_units/unit.rb",
-    "lib/ruby_units/unit_definitions.rb",
-    "lib/ruby_units/version.rb",
-    "ruby-units.gemspec",
-    "spec/ruby-units/array_spec.rb",
-    "spec/ruby-units/complex_spec.rb",
-    "spec/ruby-units/date_spec.rb",
-    "spec/ruby-units/math_spec.rb",
-    "spec/ruby-units/numeric_spec.rb",
-    "spec/ruby-units/object_spec.rb",
-    "spec/ruby-units/string_spec.rb",
-    "spec/ruby-units/time_spec.rb",
-    "spec/ruby-units/unit_spec.rb",
+    "lib/rails-units.rb",
+    "lib/rails_units.rb",
+    "lib/rails_units/array.rb",
+    "lib/rails_units/cache.rb",
+    "lib/rails_units/date.rb",
+    "lib/rails_units/fixnum.rb",
+    "lib/rails_units/math.rb",
+    "lib/rails_units/numeric.rb",
+    "lib/rails_units/object.rb",
+    "lib/rails_units/string.rb",
+    "lib/rails_units/time.rb",
+    "lib/rails_units/unit.rb",
+    "lib/rails_units/unit_definitions.rb",
+    "lib/rails_units/version.rb",
+    "rails-units.gemspec",
+    "spec/rails-units/array_spec.rb",
+    "spec/rails-units/complex_spec.rb",
+    "spec/rails-units/date_spec.rb",
+    "spec/rails-units/math_spec.rb",
+    "spec/rails-units/numeric_spec.rb",
+    "spec/rails-units/object_spec.rb",
+    "spec/rails-units/string_spec.rb",
+    "spec/rails-units/time_spec.rb",
+    "spec/rails-units/unit_spec.rb",
     "spec/spec_helper.rb",
     "test/test_cache.rb",
-    "test/test_ruby-units.rb"
+    "test/test_rails-units.rb"
   ]
-  s.homepage = %q{https://github.com/scpike/rails-units}
-  s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.7.2}
+  s.homepage = %q{https://github.com/scpiek/rails-units}
+  s.require_paths = [%q{lib}]
+  s.rubygems_version = %q{1.8.6}
   s.summary = %q{A class that performs unit conversions and unit math}
 
   if s.respond_to? :specification_version then
