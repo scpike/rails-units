@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{ruby-units}
+  s.name = %q{rails-units}
   s.version = "1.3.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Kevin Olbrich, Ph.D."]
+  s.authors = ["Kevin Olbrich, Ph.D.", "Stephen Pike"]
   s.date = %q{2011-06-23}
-  s.description = %q{Provides classes and methods to perform unit math and conversions}
-  s.email = ["kevin.olbrich+ruby_units@gmail.com"]
+  s.description = %q{Provides classes and methods to perform unit math and conversions. Based on ruby-units but rails-compatible}
+  s.email = ["spike@scpike.net"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md",
@@ -54,7 +54,7 @@ Gem::Specification.new do |s|
     "test/test_cache.rb",
     "test/test_ruby-units.rb"
   ]
-  s.homepage = %q{https://github.com/olbrich/ruby-units}
+  s.homepage = %q{https://github.com/scpike/rails-units}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.7.2}
   s.summary = %q{A class that performs unit conversions and unit math}
