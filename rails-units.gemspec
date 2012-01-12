@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{rails-units}
-  s.version = "1.5.1"
+  s.name = "rails-units"
+  s.version = "1.6.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Kevin Olbrich, Ph.D.}]
-  s.date = %q{2011-09-17}
-  s.description = %q{Provides classes and methods to perform unit math and conversions}
-  s.email = [%q{spike@scpike.net}]
+  s.authors = ["Kevin Olbrich, Ph.D.", "Stephen Pike"]
+  s.date = "2012-01-12"
+  s.description = "Provides classes and methods to perform unit math and conversions"
+  s.email = ["spike@scpike.net"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md",
@@ -27,7 +27,6 @@ Gem::Specification.new do |s|
     "TODO",
     "VERSION",
     "lib/rails-units.rb",
-    "lib/rails_units.rb",
     "lib/rails_units/array.rb",
     "lib/rails_units/cache.rb",
     "lib/rails_units/date.rb",
@@ -40,6 +39,9 @@ Gem::Specification.new do |s|
     "lib/rails_units/unit.rb",
     "lib/rails_units/unit_definitions.rb",
     "lib/rails_units/version.rb",
+    "lib/ruby_units/string.rb",
+    "rails-units-1.3.1.gem",
+    "rails-units-1.4.1.gem",
     "rails-units.gemspec",
     "spec/rails-units/array_spec.rb",
     "spec/rails-units/complex_spec.rb",
@@ -54,10 +56,10 @@ Gem::Specification.new do |s|
     "test/test_cache.rb",
     "test/test_rails-units.rb"
   ]
-  s.homepage = %q{https://github.com/scpiek/rails-units}
-  s.require_paths = [%q{lib}]
-  s.rubygems_version = %q{1.8.6}
-  s.summary = %q{A class that performs unit conversions and unit math}
+  s.homepage = "https://github.com/scpike/rails-units"
+  s.require_paths = ["lib"]
+  s.rubygems_version = "1.8.11"
+  s.summary = "A class that performs unit conversions and unit math"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
