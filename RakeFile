@@ -11,7 +11,7 @@ begin
     gem.description = %Q{Provides classes and methods to perform unit math and conversions}
     gem.authors = ["Kevin Olbrich, Ph.D."]
     gem.email = ["spike@scpike.net"]
-    gem.homepage = "https://github.com/scpiek/rails-units"
+    gem.homepage = "https://github.com/scpike/rails-units"
     gem.files.exclude(".*")
   end
   Jeweler::GemcutterTasks.new

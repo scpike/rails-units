@@ -1,5 +1,5 @@
 class Unit < Numeric
-UNIT_DEFINITIONS = { 
+UNIT_DEFINITIONS = {
   # prefixes
   '<googol>' => [%w{googol}, 1e100, :prefix],
   '<kibi>'  =>  [%w{Ki Kibi kibi}, 2**10, :prefix],
@@ -44,9 +44,7 @@ UNIT_DEFINITIONS = {
   '<rod>'   =>  [%w{rd rod rods}, 5.029, :length, %w{<meter>}],
   '<mil>'   =>  [%w{mil mils}, 0.0000254, :length, %w{<meter>}],
   '<angstrom>'  =>[%w{ang angstrom angstroms}, Rational(1,1e10), :length, %w{<meter>}],
-  '<fathom>' => [%w{fathom fathoms}, 1.829, :length, %w{<meter>}],  
-  '<pica>'  => [%w{pica picas}, 0.004217, :length, %w{<meter>}],
-  '<point>' => [%w{pt point points}, 0.0003514, :length, %w{<meter>}],
+  '<fathom>' => [%w{fathom fathoms}, 1.829, :length, %w{<meter>}],
   '<redshift>' => [%w{z red-shift}, 1.302773e26, :length, %w{<meter>}],
   '<AU>'    => [%w{AU astronomical-unit}, 149597900000, :length, %w{<meter>}],
   '<light-second>'=>[%w{ls light-second}, 299792500, :length, %w{<meter>}],
@@ -86,7 +84,7 @@ UNIT_DEFINITIONS = {
   '<mph>' => [%w{mph}, 0.44704, :speed, %w{<meter>}, %w{<second>}],
   '<knot>' => [%w{kt kn kts knot knots}, 0.514444444, :speed, %w{<meter>}, %w{<second>}],
   '<fps>'  => [%w{fps}, 0.3048, :speed, %w{<meter>}, %w{<second>}],
-  
+
   #acceleration
   '<gee>' => [%w{gee}, 9.80655, :acceleration, %w{<meter>}, %w{<second> <second>}],
 
@@ -99,11 +97,11 @@ UNIT_DEFINITIONS = {
   '<temp-C>'  => [%w{tempC}, 1, :temperature, %w{<temp-K>}],
   '<temp-F>'  => [%w{tempF}, Rational(1,1.8), :temperature, %w{<temp-K>}],
   '<temp-R>'  => [%w{tempR}, Rational(1,1.8), :temperature, %w{<temp-K>}],
-  
+
   #time
   '<second>'=>  [%w{s sec second seconds}, 1, :time, %w{<second>}],
-  '<minute>'=>  [%w{min minute minutes}, 60, :time, %w{<second>}],  
-  '<hour>'=>  [%w{h hr hrs hour hours}, 3600, :time, %w{<second>}],  
+  '<minute>'=>  [%w{min minute minutes}, 60, :time, %w{<second>}],
+  '<hour>'=>  [%w{h hr hrs hour hours}, 3600, :time, %w{<second>}],
   '<day>'=>  [%w{d day days}, 3600*24, :time, %w{<second>}],
   '<week>'=>  [%w{wk week weeks}, 7*3600*24, :time, %w{<second>}],
   '<fortnight>'=> [%w{fortnight fortnights}, 1209600, :time, %W{<second>}],
@@ -113,7 +111,6 @@ UNIT_DEFINITIONS = {
 
   #pressure
   '<pascal>' => [%w{Pa pascal Pascal}, 1, :pressure, %w{<kilogram>},%w{<meter> <second> <second>}],
-  '<bar>' => [%w{bar bars}, 100000, :pressure, %w{<kilogram>},%w{<meter> <second> <second>}],
   '<mmHg>' => [%w{mmHg}, 133.322368,:pressure, %w{<kilogram>},%w{<meter> <second> <second>}],
   '<inHg>' => [%w{inHg}, 3386.3881472,:pressure, %w{<kilogram>},%w{<meter> <second> <second>}],
   '<torr>' => [%w{torr}, 133.322368,:pressure, %w{<kilogram>},%w{<meter> <second> <second>}],
@@ -122,7 +119,7 @@ UNIT_DEFINITIONS = {
   '<psi>' => [%w{psi}, 6894.76,:pressure, %w{<kilogram>},%w{<meter> <second> <second>}],
   '<cmh2o>' => [%w{cmH2O}, 98.0638,:pressure, %w{<kilogram>},%w{<meter> <second> <second>}],
   '<inh2o>' => [%w{inH2O}, 249.082052,:pressure, %w{<kilogram>},%w{<meter> <second> <second>}],
-  
+
   #viscosity
   '<poise>'  => [%w{P poise}, Rational(1,10), :viscosity, %w{<kilogram>},%w{<meter> <second>} ],
   '<stokes>' => [%w{St stokes}, Rational(1,1e4), :viscosity, %w{<meter> <meter>}, %w{<second>}],
@@ -215,7 +212,7 @@ UNIT_DEFINITIONS = {
   '<sievert>' => [%w{Sv sievert sieverts}, 1, :radiation, %w{<meter> <meter>}, %w{<second> <second>}],
   '<becquerel>' => [%w{Bq bequerel bequerels}, 1, :radiation, %w{<1>},%w{<second>}],
   '<curie>' => [%w{Ci curie curies}, 3.7e10, :radiation, %w{<1>},%w{<second>}],
-  
+
   # rate
   '<cpm>' => [%w{cpm}, Rational(1,60), :rate, %w{<count>},%w{<second>}],
   '<dpm>' => [%w{dpm}, Rational(1,60), :rate, %w{<count>},%w{<second>}],
@@ -232,7 +229,7 @@ UNIT_DEFINITIONS = {
   #other
   '<cell>' => [%w{cells cell}, 1, :counting, %w{<each>}],
   '<each>' => [%w{each}, 1, :counting, %w{<each>}],
-  '<count>' => [%w{count}, 1, :counting, %w{<each>}],  
+  '<count>' => [%w{count}, 1, :counting, %w{<each>}],
   '<base-pair>'  => [%w{bp}, 1, :counting, %w{<each>}],
   '<nucleotide>' => [%w{nt}, 1, :counting, %w{<each>}],
   '<molecule>' => [%w{molecule molecules}, 1, :counting, %w{<1>}],
